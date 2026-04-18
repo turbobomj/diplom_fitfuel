@@ -1,0 +1,42 @@
+2026-03-22 23:52:51 - check_purchase.php вызван
+Session user_id: 9
+GET product_id: 21
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=9, product_id=21
+Результат: count=1, can_review=true
+---
+2026-03-22 23:58:30 - check_purchase.php вызван
+Session user_id: 8
+GET product_id: 20
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=8, product_id=20
+Результат: count=0, can_review=false
+---
+2026-03-22 23:58:41 - check_purchase.php вызван
+Session user_id: 8
+GET product_id: 20
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=8, product_id=20
+Результат: count=0, can_review=false
+---
+2026-03-22 23:58:56 - check_purchase.php вызван
+Session user_id: 8
+GET product_id: 20
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=8, product_id=20
+Результат: count=1, can_review=true
+---
+2026-03-22 23:59:12 - check_purchase.php вызван
+Session user_id: 8
+GET product_id: 20
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=8, product_id=20
+Результат: count=1, can_review=true
+---
+2026-03-22 23:59:59 - check_purchase.php вызван
+Session user_id: 8
+GET product_id: 21
+Выполняем запрос: SELECT COUNT(*) as count FROM orders o                 JOIN order_items oi ON o.id = oi.order_id                 WHERE o.user_id = ? AND oi.product_id = ? AND o.status = 'completed'
+Параметры: user_id=8, product_id=21
+Результат: count=0, can_review=false
+---
